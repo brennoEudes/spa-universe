@@ -85,7 +85,7 @@ h1 {
 }
 
 /* UNIVERSE */
-#universe {
+#universe, #exploration {
   width: 100vw;
   height: 100vh;
   background-image: url(./assets/bg-universe.png);
@@ -93,7 +93,7 @@ h1 {
   background-size: cover;
 }
 
-#universe .universe-texts {
+.texts-elements {
   color: #e1e1e6;
   display: flex;
   flex-direction: column;
@@ -103,20 +103,16 @@ h1 {
   max-width: 80rem;
 }
 
-#universe .universe-texts h1 {
+.texts-elements h1 {
   font-size: 4rem;
 }
 
-#universe .universe-texts p {
+.texts-elements p {
   font-size: 1.8rem;
   line-height: 2.8rem;
 }
 
-/* EXPLORATION
+/* EXPLORATION */
 #exploration {
-  width: 100vw;
-  height: 100vh;
   background-image: url(./assets/bg-exploration.png);
-  background-position: center;
-  background-size: cover;
-} */
+}
