@@ -81,11 +81,10 @@ h1 {
 
 #home button:hover {
   background: #fff;
-  color: #02799D;
+  color: #02799d;
 }
 
-
-/* UNIVERSE
+/* UNIVERSE */
 #universe {
   width: 100vw;
   height: 100vh;
@@ -94,11 +93,30 @@ h1 {
   background-size: cover;
 }
 
+#universe .universe-texts {
+  color: #e1e1e6;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  padding: 18.5rem 10rem;
+  max-width: 80rem;
+}
+
+#universe .universe-texts h1 {
+  font-size: 4rem;
+}
+
+#universe .universe-texts p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+/* EXPLORATION
 #exploration {
   width: 100vw;
   height: 100vh;
   background-image: url(./assets/bg-exploration.png);
   background-position: center;
   background-size: cover;
-
 } */
