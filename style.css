@@ -44,7 +44,7 @@ h1 {
 }
 
 /* HOME */
-#app {
+#home {
   width: 100vw;
   height: 100vh;
 
@@ -54,16 +54,16 @@ h1 {
 
   gap: 2.4rem;
 
-  background-image: url(assets/bg-home.png);
+  background-image: url(./assets/bg-home.png);
   background-position: center;
   background-size: cover;
 }
 
-#app a {
+#home a {
   margin: auto;
 }
 
-#app button {
+#home button {
   appearance: none;
   background: transparent;
 
@@ -79,7 +79,26 @@ h1 {
   cursor: pointer;
 }
 
-#app button:hover {
+#home button:hover {
   background: #fff;
   color: #02799D;
 }
+
+
+/* UNIVERSE
+#universe {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/bg-universe.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#exploration {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/bg-exploration.png);
+  background-position: center;
+  background-size: cover;
+
+} */

@@ -6,13 +6,20 @@ export class Router {
     // exemplo: pense no obj c/ essa prop/valor "/": "pages/home.html" ---> em q routName = "/" e "pages/home.html" = page
   }
 
-  route(event) {
+  Route(event) {
     event = event || window.event; // Verifica se passou o evento, se não passou, verifica na "window" q é OBJ GLOBAL do navegador que contém tudão inclusive, o document (html).
     event.preventDefault(); // "evite o padrão", q no caso da tag a é redirecionar após o clique!
 
     window.history.pushState({}, "", event.target.href); // insere o histórico na fcn route informando q há mudança de pág. Esse histórico posteriomente será usado na fcn handle.
 
     this.handle();
+
+    const links = document.querySelectorAll(".routelink");
+    links.forEach((link) => {
+      link.classList.remove("active");
+    });
+
+    event.target.classList.add("active");
   }
 
   handle() {
