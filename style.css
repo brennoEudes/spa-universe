@@ -38,6 +38,16 @@ nav a {
   cursor: pointer;
 }
 
+nav a:hover {
+  transform: scale(1.1);
+  font-weight: 700;
+}
+
+nav a.active {
+  color: #fff; /* Cor desejada para o texto ativo */
+}
+
+
 h1 {
   font-size: 4.8rem;
   font-weight: 700;
@@ -85,7 +95,8 @@ h1 {
 }
 
 /* UNIVERSE */
-#universe, #exploration {
+#universe,
+#exploration {
   width: 100vw;
   height: 100vh;
   background-image: url(./assets/bg-universe.png);

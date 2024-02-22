@@ -6,7 +6,7 @@ export class Router {
     // exemplo: pense no obj c/ essa prop/valor "/": "pages/home.html" ---> em q routName = "/" e "pages/home.html" = page
   }
 
-  Route(event) {
+  route(event) {
     event = event || window.event; // Verifica se passou o evento, se não passou, verifica na "window" q é OBJ GLOBAL do navegador que contém tudão inclusive, o document (html).
     event.preventDefault(); // "evite o padrão", q no caso da tag a é redirecionar após o clique!
 
